@@ -11,6 +11,25 @@ module.exports = {
   darkMode: "class",
   theme: {
     // rest of the code
+    glass: {
+      'box-shadow': '0 0 10px rgba(0, 0, 0, 0.2)',
+      'filter': 'blur(10px)',
+    },
+
+
+    extend: {
+      animation: {
+        scroll:
+          "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+      },
+      keyframes: {
+        scroll: {
+          to: {
+            transform: "translate(calc(-50% - 0.5rem))",
+          },
+        },
+      },
+    },
   },
   plugins: [addVariablesForColors],
 };

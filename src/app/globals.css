@@ -7,3 +7,40 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body {
+    background: #000;
+}
+
+
+.glass{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(-50px);
+    -webkit-backdrop-filter: blur(-10px);
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.logos {
+    height: 100px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+  }
+  
+  .logos .logos-slide {
+    animation: scroll 40s linear infinite;
+    display: flex;
+    align-items: center;
+    width: calc(150px * 8);
+  }
+  
+  .logos .slide-item {
+    height: 100px;
+    width: 150px;
+  }
+  
+  .logos:hover .logos-slide {
+    animation-play-state: paused;
+  }
