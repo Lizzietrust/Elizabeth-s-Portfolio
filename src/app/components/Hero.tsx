@@ -11,7 +11,7 @@ const Hero = () => {
             <BackgroundBeams />
              
             <div className='flex items-center justify-center flex-col'>
-                <h1 className='text-6xl text-center leading-[80px] font-semibold'>
+                <h1 className='md:text-6xl text-4xl text-center leading-10 md:leading-[80px] font-semibold'>
                     Hello✋, I&apos;m Elizabeth, your go to
                     <span className="block text-violet-700">Frontend developer.</span> 
                 </h1>
@@ -19,7 +19,7 @@ const Hero = () => {
                     className=""
                     words="Hello, I&apos;m Elizabeth, your go to Frontend developer."
                 /> */}
-                <p className='text-center w-1/2 mt-5'> I&apos;m a frontend developer with a passion for building fast, responsive, and visually stunning digital experiences. With a keen eye for detail and a deep understanding of web development best practices, I bring innovative ideas to life and create interfaces that captivate and inspire users.</p>
+                <p className='text-center md:w-1/2 mt-5'> I&apos;m a frontend developer with a passion for building fast, responsive, and visually stunning digital experiences. With a keen eye for detail and a deep understanding of web development best practices, I bring innovative ideas to life and create interfaces that captivate and inspire users.</p>
             </div>
 
             <div className="flex items-center justify-center gap-10 mt-10">

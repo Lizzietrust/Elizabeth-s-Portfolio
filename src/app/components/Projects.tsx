@@ -7,7 +7,7 @@ const Projects = () => {
     <div className='py-5' id='projects'>
       <h1 className='text-center text-5xl font-semibold mb-4 pb-5'>Projects</h1>
 
-      <div className='grid grid-cols-3 gap-y-8 gap-x-6 pb-10'>
+      <div className='grid md:grid-cols-3 gap-y-8 md:gap-x-6 pb-10'>
         {projects.map((item, i) => (
           <div className='glass h-[550px] rounded-2xl p-5' key={i}>
             <div className='relative w-full h-1/2 mb-5 rounded-xl object-cover'>
