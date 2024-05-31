@@ -49,11 +49,12 @@ export const projects = [
       link: "https://react-crypto-app-eosin-theta.vercel.app/",
       github: "https://github.com/Lizzietrust/React-CryptoApp"
     },
-    // {
-    //     id: 4,
-    //     title: "Animated Apple Iphone 3D Website",
-    //     des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    //     img: "/p4.svg",
-    //     link: "/ui.apple.com",
-    // },
+    {
+      id: 4,
+      title: "Film Explorer Hub",
+      des: "Discover your next favorite movie! Search, filter, and explore movie details with our user-friendly web app, personalized for authenticated users",
+      img: "/assets/Screenshot 4.png",
+      link: "https://movie-web-app-black.vercel.app/",
+      github: "https://github.com/Lizzietrust/movie-web-app"
+    },
 ];  
