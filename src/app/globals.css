@@ -1,46 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
 }
 
 body {
-    background: #000;
+  background: #000;
 }
 
-
-.glass{
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-    backdrop-filter: blur(-50px);
-    -webkit-backdrop-filter: blur(-10px);
-    border:1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+.glass {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(-50px);
+  -webkit-backdrop-filter: blur(-10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
 .logos {
-    height: 100px;
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative;
-    width: auto;
-  }
-  
-  .logos .logos-slide {
-    animation: scroll 40s linear infinite;
-    display: flex;
-    align-items: center;
-    width: calc(150px * 8);
-  }
-  
-  .logos .slide-item {
-    height: 100px;
-    width: 150px;
-  }
-  
-  .logos:hover .logos-slide {
-    animation-play-state: paused;
-  }
+  height: 100px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  width: auto;
+}
+
+.logos .logos-slide {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  align-items: center;
+  width: calc(150px * 8);
+}
+
+.logos .slide-item {
+  height: 100px;
+  width: 150px;
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
