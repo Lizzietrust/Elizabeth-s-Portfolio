@@ -37,19 +37,22 @@ const About = () => {
       <div className="flex flex-col md:flex-row gap-10 items-center justify-center max-w-5xl mx-auto">
         <div className="flex-1 flex flex-col items-center md:items-start">
           <p className="text-lg text-slate-300 leading-relaxed mb-6 text-center md:text-left">
-            With firm foundations in HTML, CSS, and JavaScript, I create fluid
-            user interfaces that impress and engage. My familiarity with
-            responsive design and mobile-first development ensures that my work
-            shines on any screen. I have hands-on experience with leading
-            frontend frameworks like React.js and Next.js, and I leverage their
-            power to create fast, scalable, and maintainable applications.
+            With a modern frontend skills set, I develop intricate user
+            interfaces considering all user centric performance.
             <br /> <br />
-            My passion for performance and accessibility compels me to go the
-            extra mile to not just make my projects look gorgeous but also very
-            fast and accessible to everyone. I always keep an eye on the latest
-            web development paradigms and best practices, constantly seeking
-            innovative ways to push the boundaries of what is possible in the
-            virtual world.
+            Alongside an extensive background utilizing hands on experience with
+            React.Js, TypeScript, Next.Js, and similar frameworks, I am
+            extremely proficient in building responsive, scalable web
+            applications. My commitment towards programming efficiency combined
+            with my desire for clean structured code ensures efficient and up to
+            date webapp.
+            <br /> <br />
+            My technical considerations as well as fundamental principles
+            emphasize seamless interaction as well as high engagement, extending
+            to flawless operational versatility. Every project that I am
+            involved in puts me in a collaborated atmosphere from where I tend
+            to not only learn but get excited to apply other technologies and
+            methodologies.
           </p>
           <div className="flex flex-wrap gap-4 justify-center md:justify-start">
             {stacks.map((item, i) => (

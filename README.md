@@ -1,36 +1,182 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Elizabeth Ohida - Frontend Developer Portfolio
 
-## Getting Started
+A modern, responsive portfolio website built with Next.js, TypeScript, and Tailwind CSS. This portfolio showcases my skills, experience, and projects as a frontend developer.
 
-First, run the development server:
+## 🚀 Features
+
+- **Modern Design**: Clean, professional design with smooth animations
+- **Responsive**: Fully responsive across all devices and screen sizes
+- **Performance Optimized**: Built with Next.js for optimal performance
+- **Accessible**: WCAG compliant with proper semantic HTML and ARIA labels
+- **Interactive**: Smooth scrolling, hover effects, and micro-interactions
+- **SEO Friendly**: Optimized meta tags and structured data
+
+## 🛠️ Technologies Used
+
+- **Framework**: Next.js 14 with App Router
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion
+- **Icons**: React Icons
+- **Deployment**: Vercel
+
+## 📋 Sections
+
+1. **Hero Section**: Introduction with call-to-action buttons
+2. **About**: Personal background and technical expertise
+3. **Skills**: Technical skills with proficiency indicators
+4. **Experience**: Professional work history with achievements
+5. **Projects**: Portfolio projects with detailed descriptions
+6. **Testimonials**: Client and colleague feedback
+7. **Contact**: Professional contact form and information
+8. **Footer**: Additional links and social media
+
+## 🎨 Design Features
+
+- **Dark Theme**: Professional dark color scheme
+- **Gradient Accents**: Purple and indigo gradients for visual appeal
+- **Glass Morphism**: Subtle glass effects on cards and components
+- **Smooth Animations**: Framer Motion animations for enhanced UX
+- **Custom Scrollbar**: Styled scrollbar matching the theme
+- **Hover Effects**: Interactive hover states throughout
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/elizabeth-portfolio.git
+cd elizabeth-portfolio
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Run the development server:
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Building for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## 📁 Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+src/
+├── app/
+│   ├── components/
+│   │   ├── Hero.tsx
+│   │   ├── About.tsx
+│   │   ├── Skills.tsx
+│   │   ├── Experience.tsx
+│   │   ├── Projects.tsx
+│   │   ├── Testimonials.tsx
+│   │   ├── Contact.tsx
+│   │   ├── Footer.tsx
+│   │   ├── ProjectModal.tsx
+│   │   └── ui/
+│   │       ├── background-beams.tsx
+│   │       ├── BentoGrid.tsx
+│   │       ├── FloatingNav.tsx
+│   │       ├── InfiniteMovingCards.tsx
+│   │       └── TextGenerateEffect.tsx
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+├── constants/
+│   └── index.ts
+└── lib/
+    └── utils.ts
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎯 Key Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Performance Optimizations
 
-## Deploy on Vercel
+- Next.js Image optimization
+- Code splitting and lazy loading
+- Optimized bundle size
+- Efficient animations
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Accessibility
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Semantic HTML structure
+- ARIA labels and roles
+- Keyboard navigation support
+- Screen reader compatibility
+- High contrast ratios
+
+### SEO
+
+- Meta tags optimization
+- Open Graph tags
+- Structured data
+- Sitemap generation
+
+## 📱 Responsive Design
+
+The portfolio is fully responsive and optimized for:
+
+- Desktop (1200px+)
+- Tablet (768px - 1199px)
+- Mobile (320px - 767px)
+
+## 🎨 Customization
+
+### Colors
+
+The color scheme can be customized in `tailwind.config.ts`:
+
+- Primary: Violet (#8b5cf6)
+- Secondary: Indigo (#6366f1)
+- Background: Slate (#0f172a)
+
+### Content
+
+Update the content in `src/constants/index.ts`:
+
+- Personal information
+- Skills and experience
+- Projects and testimonials
+- Contact details
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📞 Contact
+
+- **Email**: ohidaelizabeth3@gmail.com
+- **LinkedIn**: [Elizabeth Ohida](https://linkedin.com/in/elizabeth-ohida)
+- **GitHub**: [@Lizzietrust](https://github.com/Lizzietrust)
+- **Twitter**: [@elizabeth_ohida](https://twitter.com/elizabeth_ohida)
+
+---
+
+**Built with ❤️ using Next.js, TypeScript, and Tailwind CSS**

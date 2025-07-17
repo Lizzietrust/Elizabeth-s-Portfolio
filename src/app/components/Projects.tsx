@@ -51,7 +51,7 @@ const Projects = () => {
             </div>
             <p className="text-center text-slate-300 mb-6 flex-1">{item.des}</p>
             <div className="flex gap-4 mt-auto">
-              <a
+              {item?.github && <a
                 href={item.github}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -60,7 +60,7 @@ const Projects = () => {
                 onClick={(e) => e.stopPropagation()}
               >
                 GitHub
-              </a>
+              </a>}
               <a
                 href={item.link}
                 target="_blank"
