@@ -146,14 +146,32 @@ export const testimonials = [
 export const projects = [
   {
     id: 1,
+    title: "Trendy Fashion Wears and Accessories Store",
+    des: "A stylish eCommerce app for discovering and shopping trendy fashion wears and accessories, offering seamless browsing, secure checkout, and fast delivery.",
+    img: "/assets/s25.png",
+    link: "https://ricky-xtopha-frontend.vercel.app/",
+    // github: "https://github.com/Lizzietrust/blogg",
+    tags: ["Next.js", "React", "Tailwind", "Tanstack Query"],
+    details: "",
+    screenshots: ["/assets/s24.png"],
+    features: [
+      "User authentication and authorization",
+      "Responsive design for all devices",
+      "SEO optimized with meta tags",
+      "Real-time content updates",
+    ],
+    challenges: "",
+    solutions: "",
+  },
+  {
+    id: 1,
     title: "PROSE E-Tracker: Smart Logistics Management App",
     des: "PROSE E-Tracker is an application which helps with logistics by tracking jobs, providing updates in real time, mapping the routes and increasing productivity with the clients, transporters, and admin.",
     img: "/assets/s24.png",
     link: "https://prose-staging.vercel.app/",
     // github: "https://github.com/Lizzietrust/blogg",
     tags: ["Next.js", "React", "Tailwind", "Tanstack Query"],
-    details:
-      "",
+    details: "",
     screenshots: ["/assets/s24.png"],
     features: [
       "User authentication and authorization",
@@ -163,10 +181,8 @@ export const projects = [
       "SEO optimized with meta tags",
       "Real-time content updates",
     ],
-    challenges:
-      "",
-    solutions:
-      "",
+    challenges: "",
+    solutions: "",
   },
   {
     id: 1,
