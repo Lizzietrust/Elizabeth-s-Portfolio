@@ -52,7 +52,7 @@ const Testimonials = () => {
 
                 {/* Testimonial Content */}
                 <blockquote className="text-slate-300 leading-relaxed mb-6 italic">
-                  "{testimonial.content}"
+                  &ldquo;{testimonial.content}&rdquo;
                 </blockquote>
 
                 {/* Author Info */}
@@ -88,7 +88,7 @@ const Testimonials = () => {
               Trusted by Developers & Designers
             </h3>
             <p className="text-slate-300 mb-6 max-w-2xl mx-auto">
-              I've collaborated with various professionals across different
+              I&apos;ve collaborated with various professionals across different
               industries, consistently delivering high-quality results and
               maintaining strong working relationships.
             </p>

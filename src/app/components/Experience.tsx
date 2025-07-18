@@ -132,15 +132,15 @@ const Experience = () => {
               Ready for New Challenges
             </h3>
             <p className="text-slate-300 mb-6 max-w-2xl mx-auto">
-              I'm actively seeking opportunities to contribute to innovative
-              projects and grow as a frontend developer. Let's discuss how I can
+              I&apos;m actively seeking opportunities to contribute to innovative
+              projects and grow as a frontend developer. Let&apos;s discuss how I can
               add value to your team.
             </p>
             <a
               href="mailto:ohidaelizabeth3@gmail.com"
               className="inline-flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-violet-600 to-indigo-600 text-white font-semibold rounded-full hover:from-violet-500 hover:to-indigo-500 transition-all duration-200 hover:scale-105"
             >
-              Let's Connect <FaExternalLinkAlt className="text-sm" />
+              Let&apos;s Connect <FaExternalLinkAlt className="text-sm" />
             </a>
           </div>
         </motion.div>

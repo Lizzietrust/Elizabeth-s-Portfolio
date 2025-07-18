@@ -9,7 +9,7 @@ interface ProjectModalProps {
     details: string;
     tags: string[];
     screenshots: string[];
-    github: string;
+    github?: string;
     link: string;
   } | null;
 }

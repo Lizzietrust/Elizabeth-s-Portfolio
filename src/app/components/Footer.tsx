@@ -22,7 +22,7 @@ const Footer = () => {
           {/* Contact Info */}
           <div>
             <h3 className="text-xl font-bold text-violet-200 mb-4">
-              Let's Connect
+              Let&apos;s Connect
             </h3>
             <div className="space-y-3">
               <a
@@ -107,8 +107,8 @@ const Footer = () => {
               Ready to Work Together?
             </h3>
             <p className="text-slate-300 mb-6 max-w-2xl mx-auto">
-              I'm passionate about creating exceptional user experiences and
-              always excited to take on new challenges. Let's discuss how I can
+              I&apos;m passionate about creating exceptional user experiences and
+              always excited to take on new challenges. Let&apos;s discuss how I can
               contribute to your next project.
             </p>
             <a

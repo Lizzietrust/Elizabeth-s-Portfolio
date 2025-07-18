@@ -11,11 +11,11 @@ const Contact = () => {
       <div className="max-w-4xl mx-auto px-4">
         <div className="text-center mb-12">
           <h1 className="text-5xl font-bold mb-4 text-violet-200 tracking-tight">
-            Let's Work Together
+            Let&apos;s Work Together
           </h1>
           <p className="text-slate-400 max-w-2xl mx-auto">
-            I'm always excited to discuss new opportunities and collaborate on interesting projects. 
-            Whether you have a specific project in mind or just want to connect, I'd love to hear from you.
+            I&apos;m always excited to discuss new opportunities and collaborate on interesting projects. 
+            Whether you have a specific project in mind or just want to connect, I&apos;d love to hear from you.
           </p>
         </div>
 
