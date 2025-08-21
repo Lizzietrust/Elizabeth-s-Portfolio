@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <section
       aria-labelledby="hero-title"
-      className="py-16 pb-28 relative bg-gradient-to-b from-slate-950 to-slate-900 min-h-screen flex items-center"
+      className="py-16 pb-28 relative bg-gradient-to-b from-slate-950 to-slate-900 min-h-screen flex items-center px-3 md:px-0"
     >
       <BackgroundBeams />
       <div className="flex items-center justify-center flex-col relative z-10">
@@ -40,18 +40,18 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="flex items-center justify-center gap-8 mt-12 relative z-10">
+        <div className="block md:flex items-center justify-center gap-8 mt-12 relative z-10 w-full">
           <a
-            href="/assets/Resume.pdf"
+            href="/assets/Elizabeth-Ohida-Resume.pdf"
             download
-            className="inline-flex items-center justify-center h-12 px-8 rounded-full bg-gradient-to-r from-violet-700 to-indigo-600 text-white font-semibold shadow-lg transition-all duration-200 hover:from-violet-600 hover:to-indigo-500 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-violet-400 text-base gap-2"
+            className="flex md:inline-flex items-center justify-center h-12 px-8 rounded-full bg-gradient-to-r from-violet-700 to-indigo-600 text-white font-semibold shadow-lg transition-all duration-200 hover:from-violet-600 hover:to-indigo-500 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-violet-400 text-base gap-2 mb-4 md:mb-0"
             aria-label="Download My Resume"
           >
             Download Resume <FaDownload />
           </a>
           <a
             href="mailto:ohidaelizabeth3@gmail.com"
-            className="inline-flex items-center justify-center h-12 px-8 rounded-full border border-violet-500 text-violet-200 font-semibold bg-transparent hover:bg-violet-700 hover:text-white transition-all duration-200 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-violet-400 text-base gap-2"
+            className="flex md:inline-flex items-center justify-center h-12 px-8 rounded-full border border-violet-500 text-violet-200 font-semibold bg-transparent hover:bg-violet-700 hover:text-white transition-all duration-200 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-violet-400 text-base gap-2"
             aria-label="Send me an email"
           >
             Get In Touch <IoMdMail />
@@ -79,7 +79,7 @@ const Hero = () => {
         {/* Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 animate-fadeIn delay-400">
           <div className="text-center">
-            <div className="text-3xl font-bold text-violet-400">6+</div>
+            <div className="text-3xl font-bold text-violet-400">9+</div>
             <div className="text-sm text-slate-400">Projects Completed</div>
           </div>
           <div className="text-center">
