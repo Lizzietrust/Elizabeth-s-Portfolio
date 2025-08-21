@@ -33,7 +33,7 @@ const Experience = () => {
 
         <div className="relative">
           {/* Timeline line */}
-          <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 w-0.5 h-full bg-gradient-to-b from-violet-500 to-indigo-500"></div>
+          <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 w-0.5 h-full bg-gradient-to-b from-violet-500 to-indigo-500 block md:hidden"></div>
 
           <div className="space-y-12">
             {experience.map((job, index) => (
@@ -48,12 +48,12 @@ const Experience = () => {
                 } flex-col md:gap-8`}
               >
                 {/* Timeline dot */}
-                <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 bg-violet-500 rounded-full border-4 border-slate-900 z-10"></div>
+                <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 bg-violet-500 rounded-full border-4 border-slate-900 z-10 block md:hidden"></div>
 
                 {/* Content */}
                 <div
                   className={`flex-1 ${
-                    index % 2 === 0 ? "md:pr-8" : "md:pl-8"
+                    index % 2 === 0 ? "md:pr-0" : "md:pl-0"
                   } ml-12 md:ml-0`}
                 >
                   <div className="bg-slate-800/50 border border-slate-700 rounded-2xl p-6 hover:border-violet-500 transition-colors">
