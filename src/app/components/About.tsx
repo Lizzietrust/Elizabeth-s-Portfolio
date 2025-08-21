@@ -29,7 +29,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="py-16 bg-gradient-to-b from-slate-900 to-slate-950 w-full"
+      className="py-16 bg-gradient-to-b from-slate-900 to-slate-950 w-full px-3 md:px-0"
     >
       <h1 className="text-center text-5xl font-bold mb-10 text-violet-200 tracking-tight">
         About Me
