@@ -42,16 +42,22 @@ export const FloatingNav = ({
   }, []);
 
   useMotionValueEvent(scrollYProgress, "change", (current) => {
+    // Check if current is not undefined and is a number
     if (typeof current === "number") {
-      let direction = current - scrollYProgress.getPrevious();
+      const previous = scrollYProgress.getPrevious();
+      
+      // Only proceed if we have a previous value to compare with
+      if (typeof previous === "number") {
+        let direction = current - previous;
 
-      if (scrollYProgress.get() < 0.05) {
-        setVisible(false);
-      } else {
-        if (direction < 0) {
-          setVisible(true);
-        } else {
+        if (current < 0.05) {
           setVisible(false);
+        } else {
+          if (direction < 0) {
+            setVisible(true);
+          } else {
+            setVisible(false);
+          }
         }
       }
     }
@@ -98,6 +104,13 @@ export const FloatingNav = ({
             </button>
           )}
 
+          {/* Logo or brand name - show on mobile when menu is closed */}
+          {isMobile && !isMobileMenuOpen && (
+            <div className="text-sm font-medium text-neutral-600 dark:text-neutral-50">
+              Your Logo
+            </div>
+          )}
+
           {/* Desktop navigation items - hidden on mobile */}
           {!isMobile && navItems.map((navItem: any, idx: number) => (
             <Link
@@ -112,11 +125,8 @@ export const FloatingNav = ({
             </Link>
           ))}
 
-          {/* If you want to keep the login button on mobile too */}
-          {/* <button className="hidden md:block border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-4 py-2 rounded-full">
-            <span>Login</span>
-            <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-blue-500 to-transparent h-px" />
-          </button> */}
+          {/* Optional: Add a placeholder to balance the flex layout on mobile */}
+          {isMobile && <div className="w-9"></div>}
         </motion.div>
       </AnimatePresence>
 
@@ -150,12 +160,6 @@ export const FloatingNav = ({
                   <span>{navItem.name}</span>
                 </Link>
               ))}
-              {/* Mobile login button if needed */}
-              {/* <div className="px-6 py-4 border-t border-gray-200 dark:border-gray-700">
-                <button className="w-full text-center border text-sm font-medium border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-4 py-2 rounded-full">
-                  Login
-                </button>
-              </div> */}
             </motion.div>
           </motion.div>
         )}
