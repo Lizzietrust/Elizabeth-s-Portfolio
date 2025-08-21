@@ -118,27 +118,27 @@ export const experience = [
 
 export const testimonials = [
   {
-    name: "Sarah Johnson",
-    role: "Senior Frontend Developer",
+    name: "Emmanuel Bin",
+    role: "Senior Software Developer",
     company: "TechCorp",
     content:
-      "Elizabeth's technical skills are exceptional. She consistently delivers clean, maintainable code and has a deep understanding of React and modern frontend architecture. Her attention to performance optimization and accessibility makes her stand out.",
+      "Elizabeth's technical skills are excellent. She consistently generates clean, deployable code and has a deep understanding of React and modern frontend architecture. Her commitment to accessibility and performance optimization sets her apart",
     avatar: "👩‍💻",
   },
   {
-    name: "Michael Chen",
+    name: "Esther Abu",
     role: "UI/UX Designer",
     company: "DesignStudio",
     content:
-      "Elizabeth has an excellent eye for design implementation. She transforms complex designs into pixel-perfect, responsive interfaces. Her communication skills and ability to understand design requirements make collaboration seamless.",
+      "Elizabeth possesses a good skill for design implementation, transforming tricky designs into pixel-perfect, responsive interfaces. Good communication skills and a high level of understanding of requirements make collaboration smooth and highly effective.",
     avatar: "👨‍🎨",
   },
   {
-    name: "David Rodriguez",
+    name: "Ruth Abiloye",
     role: "Project Manager",
     company: "StartupXYZ",
     content:
-      "Elizabeth exceeded our expectations on every project. She's reliable, communicates effectively, and delivers high-quality work on time. Her problem-solving abilities and technical expertise make her an invaluable team member.",
+      "Elizabeth consistently worked above expectations on all projects, producing consistently high-quality output to time. A nice and communicative individual, she combines problem-solving ability with good technical competence, making her a very worthwhile and well-respected member of any development team.",
     avatar: "👨‍💼",
   },
 ];
