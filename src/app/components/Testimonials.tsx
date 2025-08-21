@@ -57,17 +57,17 @@ const Testimonials = () => {
 
                 {/* Author Info */}
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-violet-500 to-indigo-600 rounded-full flex items-center justify-center text-white text-xl font-bold">
+                  {/* <div className="w-12 h-12 bg-gradient-to-br from-violet-500 to-indigo-600 rounded-full flex items-center justify-center text-white text-xl font-bold">
                     {testimonial.avatar}
-                  </div>
+                  </div> */}
                   <div>
                     <h4 className="font-semibold text-violet-200">
                       {testimonial.name}
                     </h4>
                     <p className="text-sm text-slate-400">{testimonial.role}</p>
-                    <p className="text-xs text-slate-500">
+                    {/* <p className="text-xs text-slate-500">
                       {testimonial.company}
-                    </p>
+                    </p> */}
                   </div>
                 </div>
               </div>
