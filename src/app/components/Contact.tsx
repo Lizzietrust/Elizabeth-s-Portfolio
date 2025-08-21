@@ -1,14 +1,30 @@
-import React from "react";
+"use client"
+
+import React, { useState } from "react";
 import { FaPhone } from "react-icons/fa6";
 import { IoMdMail } from "react-icons/io";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const mailtoLink = `mailto:ohidaelizabeth3@gmail.com?subject=Frontend Developer Inquiry from ${formData.name}&body=${encodeURIComponent(
+    `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+  )}`;
+
   return (
     <section
-      className="py-16 bg-gradient-to-b from-slate-900 to-slate-950"
+      className="py-16 bg-gradient-to-b from-slate-900 to-slate-950 w-full px-3 md:px-0"
       id="contact"
     >
-      <div className="max-w-4xl mx-auto px-4">
+      <div className="max-w-4xl mx-auto md:px-4">
         <div className="text-center mb-12">
           <h1 className="text-5xl font-bold mb-4 text-violet-200 tracking-tight">
             Let&apos;s Work Together
@@ -19,9 +35,9 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Contact Information */}
-          <div className="bg-slate-800/50 border border-slate-700 rounded-2xl p-8">
+          <div className="bg-slate-800/50 border border-slate-700 rounded-2xl p-4 md:p-8">
             <h3 className="text-2xl font-bold text-violet-200 mb-6">
               Get In Touch
             </h3>
@@ -56,7 +72,7 @@ const Contact = () => {
           </div>
 
           {/* Quick Contact Form */}
-          <div className="bg-slate-800/50 border border-slate-700 rounded-2xl p-8">
+          <div className="bg-slate-800/50 border border-slate-700 rounded-2xl p-4 md:p-8">
             <h3 className="text-2xl font-bold text-violet-200 mb-6">
               Send a Message
             </h3>
@@ -66,33 +82,43 @@ const Contact = () => {
                   Name
                 </label>
                 <input
-                  type="text"
-                  className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-slate-200 placeholder-slate-400 focus:outline-none focus:border-violet-500 transition-colors"
-                  placeholder="Your name"
-                />
+              type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-slate-200 placeholder-slate-400 focus:outline-none focus:border-violet-500 transition-colors"
+              placeholder="Your name"
+            />
               </div>
               <div>
                 <label className="block text-slate-300 text-sm font-medium mb-2">
                   Email
                 </label>
                 <input
-                  type="email"
-                  className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-slate-200 placeholder-slate-400 focus:outline-none focus:border-violet-500 transition-colors"
-                  placeholder="your.email@example.com"
-                />
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-slate-200 placeholder-slate-400 focus:outline-none focus:border-violet-500 transition-colors"
+              placeholder="your.email@example.com"
+            />
+
               </div>
               <div>
                 <label className="block text-slate-300 text-sm font-medium mb-2">
                   Message
                 </label>
-                <textarea
-                  rows={4}
-                  className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-slate-200 placeholder-slate-400 focus:outline-none focus:border-violet-500 transition-colors resize-none"
-                  placeholder="Tell me about your project..."
-                ></textarea>
+               <textarea
+              rows={4}
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-slate-200 placeholder-slate-400 focus:outline-none focus:border-violet-500 transition-colors resize-none"
+              placeholder="Tell me about your project..."
+            ></textarea>
               </div>
               <a
-                href="mailto:ohidaelizabeth3@gmail.com?subject=Frontend Developer Inquiry"
+                href={mailtoLink}
                 className="block w-full text-center px-6 py-3 bg-gradient-to-r from-violet-600 to-indigo-600 text-white font-semibold rounded-lg hover:from-violet-500 hover:to-indigo-500 transition-all duration-200 hover:scale-105"
               >
                 Send Message
