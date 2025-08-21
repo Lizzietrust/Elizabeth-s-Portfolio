@@ -123,9 +123,8 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row items-center justify-between">
           <div className="flex items-center gap-2 text-slate-400 mb-4 md:mb-0">
-            <span>© 2024 Elizabeth Ohida. Made with</span>
-            <FaHeart className="text-red-500" />
-            <span>and Next.js</span>
+            <span>© 2024 Elizabeth Ohida. </span>
+            
           </div>
 
           <button
