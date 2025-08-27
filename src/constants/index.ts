@@ -169,6 +169,8 @@ export const projects = [
     des: "PROSE E-Tracker is an application which helps with logistics by tracking jobs, providing updates in real time, mapping the routes and increasing productivity with the clients, transporters, and admin.",
     img: "/assets/s24.png",
     link: "https://prose-staging.vercel.app/",
+    dashboard: "https://prose-staging.vercel.app/login",
+
     // github: "https://github.com/Lizzietrust/blogg",
     tags: ["Next.js", "React", "Tailwind", "Tanstack Query"],
     details: "",
