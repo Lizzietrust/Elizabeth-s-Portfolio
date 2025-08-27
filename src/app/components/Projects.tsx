@@ -51,7 +51,7 @@ const Projects = () => {
             </div>
             <p className="text-center text-slate-300 mb-6 flex-1">{item.des}</p>
             <div className="flex gap-4 mt-auto">
-              {item?.github && <a
+              {item?.github ? <a
                 href={item.github}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -60,7 +60,16 @@ const Projects = () => {
                 onClick={(e) => e.stopPropagation()}
               >
                 GitHub
-              </a>}
+              </a> : item?.dashboard? <a
+                href={item.dashboard}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 inline-flex items-center justify-center h-12 rounded-full bg-gradient-to-r from-violet-700 to-indigo-600 text-white font-semibold shadow-md transition-all duration-200 hover:from-violet-600 hover:to-indigo-500 focus:outline-none focus:ring-2 focus:ring-violet-400"
+                aria-label={`View live demo of ${item.title}`}
+                onClick={(e) => e.stopPropagation()}
+              >
+                Dashboard
+              </a> : null}
               <a
                 href={item.link}
                 target="_blank"
