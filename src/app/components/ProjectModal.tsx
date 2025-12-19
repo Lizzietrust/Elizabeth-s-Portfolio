@@ -11,6 +11,7 @@ interface ProjectModalProps {
     screenshots: string[];
     github?: string;
     link: string;
+    dashboard?: string;
   } | null;
 }
 
@@ -60,14 +61,25 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
           ))}
         </div>
         <div className="flex gap-4 justify-center mt-4">
-          <a
-            href={project.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-4 py-2 rounded-full bg-gradient-to-r from-violet-700 to-indigo-600 text-white font-semibold shadow hover:from-violet-600 hover:to-indigo-500 transition-all"
-          >
-            GitHub
-          </a>
+          {project.github ? (
+            <a
+              href={project.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 rounded-full bg-gradient-to-r from-violet-700 to-indigo-600 text-white font-semibold shadow hover:from-violet-600 hover:to-indigo-500 transition-all"
+            >
+              GitHub
+            </a>
+          ) : project.dashboard ?(
+            <a
+              href={project.dashboard}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 rounded-full bg-gradient-to-r from-violet-700 to-indigo-600 text-white font-semibold shadow hover:from-violet-600 hover:to-indigo-500 transition-all"
+            >
+              Dashboard
+            </a>
+          ) : null}
           <a
             href={project.link}
             target="_blank"
