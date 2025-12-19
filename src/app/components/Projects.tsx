@@ -17,7 +17,7 @@ const Projects = () => {
       <h1 className="text-center text-5xl font-bold mb-10 pb-2 text-violet-200 tracking-tight">
         Projects
       </h1>
-      <div className="grid md:grid-cols-3 gap-8 px-2 md:px-12">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 px-2 md:px-12">
         {projects.map((item, i) => (
           <div
             className="group bg-slate-800/80 border border-slate-700 shadow-xl rounded-3xl p-6 flex flex-col transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-violet-500 cursor-pointer"
