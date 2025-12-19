@@ -146,6 +146,25 @@ export const testimonials = [
 export const projects = [
   {
     id: 1,
+    title: "Chat, connect, collaborate in real-time",
+    des: "A modern real-time chat application built with the MERN stack, offering seamless messaging, secure conversations, and intuitive user experience for both personal and professional communication needs.",
+    img: "/assets/s26.png",
+    link: "https://mern-chap-app.vercel.app",
+    github: "https://github.com/Lizzietrust/mern-chap-app",
+    tags: ["React.js", "Tailwind", "Tanstack Query", "Socket.io", "Node.js", "Express", "MongoDB"],
+    details: "",
+    screenshots: ["/assets/s26.png"],
+    features: [
+      "Real-time Messaging with Socket.io",
+      "Multi-Provider Context Architecture",
+      "Theme & UI State Management",
+      "Video/Audio Calling Infrastructure",
+    ],
+    challenges: "",
+    solutions: "",
+  },
+  {
+    id: 2,
     title: "Trendy Fashion Wears and Accessories Store",
     des: "A stylish eCommerce app for discovering and shopping trendy fashion wears and accessories, offering seamless browsing, secure checkout, and fast delivery.",
     img: "/assets/s25.png",
@@ -153,7 +172,7 @@ export const projects = [
     // github: "https://github.com/Lizzietrust/blogg",
     tags: ["Next.js", "React", "Tailwind", "Tanstack Query"],
     details: "",
-    screenshots: ["/assets/s24.png"],
+    screenshots: ["/assets/s25.png"],
     features: [
       "User authentication and authorization",
       "Responsive design for all devices",
@@ -164,7 +183,7 @@ export const projects = [
     solutions: "",
   },
   {
-    id: 1,
+    id: 3,
     title: "PROSE E-Tracker: Smart Logistics Management App",
     des: "PROSE E-Tracker is an application which helps with logistics by tracking jobs, providing updates in real time, mapping the routes and increasing productivity with the clients, transporters, and admin.",
     img: "/assets/s24.png",
@@ -187,7 +206,7 @@ export const projects = [
     solutions: "",
   },
   {
-    id: 1,
+    id: 3,
     title: "Create, Share, and Publish Blogs",
     des: "Empowering creators to share their voice, showcasing user-generated content with ease, edit, publish, and draft management features.",
     img: "/assets/Screenshot 1.png",
@@ -211,7 +230,7 @@ export const projects = [
       "Used Next.js ISR for static generation, implemented efficient caching strategies, and optimized database queries",
   },
   {
-    id: 2,
+    id: 4,
     title: "Online Fast Food",
     des: "Savor the flavor, swift and easy online food ordering, manage orders and checkout with seamless user experience.",
     img: "/assets/Screenshot 2.png",
@@ -235,7 +254,7 @@ export const projects = [
       "Implemented Redux Toolkit for centralized state management with proper action creators and reducers",
   },
   {
-    id: 3,
+    id: 5,
     title: "Crypto Hub - Market Insights",
     des: "Stay updated with real-time cryptocurrency prices, market stats, news, and detailed information on the world of digital assets.",
     img: "/assets/Screenshot 3.png",
@@ -259,7 +278,7 @@ export const projects = [
       "Implemented WebSocket connections for live updates and used Chart.js for responsive, interactive visualizations",
   },
   {
-    id: 4,
+    id: 5,
     title: "Film Explorer Hub",
     des: "Discover your next favorite movie! Search, filter, and explore movie details with our user-friendly web app, personalized for authenticated users",
     img: "/assets/Screenshot 4.png",
